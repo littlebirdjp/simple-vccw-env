@@ -11,7 +11,7 @@ Vagrant.configure(2) do |config|
 
   _conf = YAML.load(
     File.open(
-      File.join(File.dirname(__FILE__), '/vccw/provision/default.yml'),
+      File.join('/vccw/provision/default.yml'),
       File::RDONLY
     ).read
   )
