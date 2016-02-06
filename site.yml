@@ -5,7 +5,7 @@
 # General Settings
 #
 wp_box: miya0001/vccw
-chef_cookbook_path: ./provision
+chef_cookbook_path: /vccw/provision
 
 #
 # Virtual Machine Settings
@@ -16,15 +16,15 @@ cpus: 1
 #
 # Network Settings
 #
-hostname: vccw.dev
-ip: 192.168.33.10
+hostname: simple-vccw-env.local
+ip: 192.168.33.99
 sync_folder: 'www/wordpress'
 
 #
 # WordPress Settings
 #
 version: latest
-lang: en_US
+lang: ja
 title: Welcome to the VCCW
 multisite: false
 rewrite_structure: /archives/%post_id%
