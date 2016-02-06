@@ -1,3 +1,6 @@
+.vagrant
+www/
+
 *.log
 .htaccess
 sitemap.xml
@@ -15,4 +18,3 @@ wp-content/plugins/hello.php
 
 /readme.html
 /license.txt
-
