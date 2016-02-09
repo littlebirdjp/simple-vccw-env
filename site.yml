@@ -110,4 +110,4 @@ php_version: default
 #
 # Linked Clone for Vagrant v1.8
 #
-linked_clone: false
+linked_clone: true
