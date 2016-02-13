@@ -1,6 +1,6 @@
+!*.gitignore
 .vagrant
 /www/wordpress/.editorconfig
-/www/wordpress/.gitignore
 /www/wordpress/.htaccess
 /www/wordpress/index.php
 /www/wordpress/license.txt
