@@ -18,7 +18,7 @@ cd simple-vccw-env
 vagrant up
 ```
 
-※Macでの利用を想定しています。Windows等の場合はそれぞれ任意のディレクトリへクローンし、VCCWの設置場所に合わせて`site.yml`と`Vagrantfile`内のパスも合わせて変更してください。
+※Macでの利用を想定しています。Windows等の場合はそれぞれ任意のディレクトリへクローンし、VCCWの設置場所に合わせて`site.yml`と`Vagrantfile`内のパスも変更してください。
 
 ## 使い方
 
