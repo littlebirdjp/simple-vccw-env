@@ -3,6 +3,8 @@
 A simple environment for [VCCW](https://github.com/vccw-team/vccw).  
 You can share whole WordPress environment with this data set.
 
+[日本語版の説明はこちら](README-ja.md)
+
 ## Install
 
 1. clone vccw to your root directory.
