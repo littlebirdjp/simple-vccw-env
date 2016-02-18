@@ -26,11 +26,13 @@ vagrant up
 ```
 vagrant ssh
 wp --path=/var/www/wordpress db import /vagrant/import.sql
+exit
 ```
 2. WordPressの設定や投稿などのデータに変更を加えた場合は、以下のコマンドを実行してから、`import.sql`もコミット＆プッシュしてください。
 ```
 vagrant ssh
 wp --path=/var/www/wordpress db export /vagrant/import.sql
+exit
 ```
 
 ※テーマやプラグイン等のファイルを編集した場合は、通常通りコミット＆プッシュして、作業内容を共有していってください。

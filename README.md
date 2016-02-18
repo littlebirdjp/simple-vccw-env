@@ -26,9 +26,11 @@ vagrant up
 ```
 vagrant ssh
 wp --path=/var/www/wordpress db import /vagrant/import.sql
+exit
 ```
 2. If you make any changes in WodrPress DB, run the below commands.
 ```
 vagrant ssh
 wp --path=/var/www/wordpress db export /vagrant/import.sql
+exit
 ```
