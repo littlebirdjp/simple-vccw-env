@@ -9,16 +9,16 @@ You can share whole WordPress environment with this data set.
 
 1. clone vccw to your root directory.
 ```
-cd /
-sudo git clone https://github.com/vccw-team/vccw.git
+sudo git clone https://github.com/vccw-team/vccw.git /vccw
 ```
 2. clone simple-vccw-env to your projects folder.
 ```
-cd ~/prj(Your projects folder)
-git clone https://github.com/littlebirdjp/simple-vccw-env.git
-cd simple-vccw-env
+git clone https://github.com/littlebirdjp/simple-vccw-env.git ~/prj/simple-vccw-env
+cd ~/prj/simple-vccw-env
 vagrant up
 ```
+You can replace `/prj/` to any other name.
+3. Visit [http://simple-vccw-env.local/](http://simple-vccw-env.local/) or [http://192.168.33.99/](http://192.168.33.99/) in your browser.
 
 ## Usage
 

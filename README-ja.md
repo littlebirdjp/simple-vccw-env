@@ -7,16 +7,15 @@
 
 1. ルートディレクトリにVCCWをクローンしてください。  
 ```
-cd /
-sudo git clone https://github.com/vccw-team/vccw.git
+sudo git clone https://github.com/vccw-team/vccw.git /vccw
 ```
 2. プロジェクトフォルダ（任意の場所）にsimple-vccw-envをクローンしてください。
 ```
-cd ~/prj(Your projects folder)
-git clone https://github.com/littlebirdjp/simple-vccw-env.git
-cd simple-vccw-env
+git clone https://github.com/littlebirdjp/simple-vccw-env.git ~/prj/simple-vccw-env
+cd ~/prj/simple-vccw-env
 vagrant up
 ```
+3. ブラウザで [http://simple-vccw-env.local/](http://simple-vccw-env.local/) または [http://192.168.33.99/](http://192.168.33.99/) へアクセスしてください。
 
 ※Macでの利用を想定しています。Windows等の場合はそれぞれ任意のディレクトリへクローンし、VCCWの設置場所に合わせて`site.yml`と`Vagrantfile`内のパスも変更してください。
 
