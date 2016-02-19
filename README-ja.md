@@ -5,29 +5,38 @@
 
 ## インストール
 
-1. ルートディレクトリにVCCWをクローンしてください。  
+### 1. ルートディレクトリにVCCWをクローンしてください。
+
 ```
 sudo git clone https://github.com/vccw-team/vccw.git /vccw
 ```
-2. プロジェクトフォルダ（任意の場所）にsimple-vccw-envをクローンしてください。
+
+### 2. プロジェクトフォルダ（任意の場所）にsimple-vccw-envをクローンしてください。
+
 ```
 git clone https://github.com/littlebirdjp/simple-vccw-env.git ~/prj/simple-vccw-env
 cd ~/prj/simple-vccw-env
 vagrant up
 ```
-3. ブラウザで [http://simple-vccw-env.local/](http://simple-vccw-env.local/) または [http://192.168.33.99/](http://192.168.33.99/) へアクセスしてください。
+
+### 3. ブラウザで仮想環境のWordPressにアクセスしてください。
+
+[http://simple-vccw-env.local/](http://simple-vccw-env.local/) または [http://192.168.33.99/](http://192.168.33.99/) を開いてください。
 
 ※Macでの利用を想定しています。Windows等の場合はそれぞれ任意のディレクトリへクローンし、VCCWの設置場所に合わせて`site.yml`と`Vagrantfile`内のパスも変更してください。
 
 ## 使い方
 
-1. `import.sql`に変更が入った場合（リモートリポジトリからプルしたファイルに差分があった場合）は、以下のコマンドを実行してください。
+`import.sql`に変更が入った場合（リモートリポジトリからプルしたファイルに差分があった場合）は、以下のコマンドを実行してください。
+
 ```
 vagrant ssh
 wp --path=/var/www/wordpress db import /vagrant/import.sql
 exit
 ```
-2. WordPressの設定や投稿などのデータに変更を加えた場合は、以下のコマンドを実行してから、`import.sql`もコミット＆プッシュしてください。
+
+WordPressの設定や投稿などのデータに変更を加えた場合は、以下のコマンドを実行してから、`import.sql`もコミット＆プッシュしてください。
+
 ```
 vagrant ssh
 wp --path=/var/www/wordpress db export /vagrant/import.sql

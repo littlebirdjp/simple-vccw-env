@@ -7,7 +7,7 @@ You can share whole WordPress environment with this data set.
 
 ## Install
 
-### 1. clone vccw to your root directory.
+### 1. clone VCCW to your root directory.
 
 ```
 sudo git clone https://github.com/vccw-team/vccw.git /vccw
