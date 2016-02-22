@@ -44,3 +44,21 @@ vagrant ssh
 wp --path=/var/www/wordpress db export /vagrant/import.sql
 exit
 ```
+## Customizing
+
+Original variables for the site are written in `site.yml`.  
+If you want change original setting, put custom variables in this file.
+
+```
+chef_cookbook_path: /vccw/provision
+hostname: simple-vccw-env.local
+ip: 192.168.33.99
+lang: ja
+linked_clone: true
+```
+
+If you want change default setting along with whole sites, Put `~/.vccw~/config.yml` and put global variables there.
+
+### Customizable variables
+
+See [provision/default.yml](https://github.com/vccw-team/vccw/blob/master/provision/default.yml).
