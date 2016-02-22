@@ -44,3 +44,22 @@ exit
 ```
 
 ※テーマやプラグイン等のファイルを編集した場合は、通常通りコミット＆プッシュして、作業内容を共有していってください。
+
+## オプション
+
+サイト固有の設定項目のみ`site.yml`に記述してあります。  
+もしオプションを追加・変更したい場合は、こちらのファイルを編集してください。
+
+```
+chef_cookbook_path: /vccw/provision
+hostname: simple-vccw-env.local
+ip: 192.168.33.99
+lang: ja
+linked_clone: true
+```
+
+もし、VCCWで起動する全サイト共通で使いたいデフォルト項目がある場合は、`~/.vccw~/config.yml`に設定ファイルを設置し、そちらにオプションを記述してください。
+
+### 使える変数一覧
+
+オプションで使用できる全ての変数は、 [provision/default.yml](https://github.com/vccw-team/vccw/blob/master/provision/default.yml)に記述されているので、そちらを参考にしてください。
